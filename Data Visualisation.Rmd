@@ -1,0 +1,422 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Load libraries required for data visualisation and analysis
+
+```{r}
+library(jsonlite)
+library(dplyr)
+library(stringr)
+```
+
+```{r}
+
+influence_edges <- c(
+  "InStyleOf",
+  "InterpolatesFrom",
+  "DirectlySamples",
+  "CoverOf",
+  "LyricalReferenceTo"
+)
+
+get_oceanus_ids <- function(nodes) {
+  nodes %>% filter(genre == "Oceanus Folk") %>% pull(id)
+}
+
+```
+
+```{r}
+
+inspect_raw_data <- function(file_path) {
+
+  data <- fromJSON(file_path)
+  nodes <- data$nodes
+  links <- data$links
+
+  colnames(nodes) <- colnames(nodes) %>% str_replace_all(" ", "_")
+  colnames(links) <- colnames(links) %>% str_replace_all(" ", "_")
+
+  valid_ids <- nodes$id[!is.na(nodes$id)]
+
+  missing_node_ids <- nodes %>% filter(is.na(id))
+  duplicate_node_ids <- nodes %>% filter(duplicated(id) | duplicated(id, fromLast = TRUE))
+  missing_names <- nodes %>% filter(is.na(name))
+  missing_genres <- nodes %>% filter(Node_Type %in% c("Song", "Album") & is.na(genre))
+
+  missing_link_endpoints <- links %>% filter(is.na(source) | is.na(target))
+
+  duplicate_links <- links %>%
+    filter(
+      duplicated(select(., source, target, Edge_Type)) |
+      duplicated(select(., source, target, Edge_Type), fromLast = TRUE)
+    )
+
+  self_loops <- links %>% filter(source == target)
+  invalid_links <- links %>% filter(!(source %in% valid_ids) | !(target %in% valid_ids))
+  orphan_nodes <- nodes %>% filter(!(id %in% unique(c(links$source, links$target))))
+
+  date_nodes <- nodes
+  for (col in c("release_date", "written_date", "notoriety_date")) {
+    if (col %in% colnames(date_nodes))
+      date_nodes[[col]] <- suppressWarnings(as.numeric(date_nodes[[col]]))
+  }
+
+  release_before_written <- if (all(c("release_date", "written_date") %in% colnames(date_nodes))) {
+    date_nodes %>% filter(!is.na(release_date) & !is.na(written_date) & release_date < written_date)
+  } else data.frame()
+
+  notoriety_before_release <- if (all(c("notoriety_date", "release_date") %in% colnames(date_nodes))) {
+    date_nodes %>% filter(!is.na(notoriety_date) & !is.na(release_date) & notoriety_date < release_date)
+  } else data.frame()
+
+  problem_counts <- data.frame(
+    problem = c(
+      "missing_node_ids", "duplicate_node_ids", "missing_names",
+      "missing_genres (Song/Album only)", "missing_link_endpoints",
+      "duplicate_links", "self_loops", "invalid_links", "orphan_nodes",
+      "release_before_written", "notoriety_before_release"
+    ),
+    n = c(
+      nrow(missing_node_ids), nrow(duplicate_node_ids), nrow(missing_names),
+      nrow(missing_genres), nrow(missing_link_endpoints),
+      nrow(duplicate_links), nrow(self_loops), nrow(invalid_links), nrow(orphan_nodes),
+      nrow(release_before_written), nrow(notoriety_before_release)
+    )
+  )
+
+  problem_tables <- list(
+    missing_node_ids = missing_node_ids, duplicate_node_ids = duplicate_node_ids,
+    missing_names = missing_names, missing_genres = missing_genres,
+    missing_link_endpoints = missing_link_endpoints, duplicate_links = duplicate_links,
+    self_loops = self_loops, invalid_links = invalid_links, orphan_nodes = orphan_nodes,
+    release_before_written = release_before_written, notoriety_before_release = notoriety_before_release
+  )
+
+  return(list(problem_counts = problem_counts, problem_tables = problem_tables))
+}
+```
+
+```{r}
+
+core_preprocess <- function(file_path) {
+
+  data <- fromJSON(file_path)
+  nodes <- data$nodes
+  links <- data$links
+
+  colnames(nodes) <- colnames(nodes) %>% str_replace_all(" ", "_")
+  colnames(links) <- colnames(links) %>% str_replace_all(" ", "_")
+
+  loops_before <- nrow(links)
+  links <- links %>% filter(source != target)
+  removed_loops <- loops_before - nrow(links)
+
+  nodes <- nodes %>%
+    mutate(is_missing_stage_name = Node_Type %in% c("Person", "MusicalGroup") & is.na(stage_name))
+
+  nodes$release_date <- suppressWarnings(as.numeric(nodes$release_date))
+
+  if ("name" %in% colnames(nodes)) nodes$name <- nodes$name %>% str_squish() %>% str_to_title()
+  nodes$stage_name <- nodes$stage_name %>% str_squish() %>% str_to_title()
+
+  nodes <- nodes %>%
+    mutate(
+      display_name = case_when(
+        !is.na(stage_name) & !is_missing_stage_name ~ paste0(stage_name, " (", name, ")"),
+        TRUE ~ coalesce(
+          if_else(!is.na(stage_name) & stage_name != "", stage_name, NA_character_),
+          name
+        )
+      )
+    )
+
+  if ("Node_Type" %in% colnames(nodes)) nodes$Node_Type <- nodes$Node_Type %>% str_squish()
+  if ("Edge_Type" %in% colnames(links)) links$Edge_Type <- links$Edge_Type %>% str_squish()
+
+  audit <- list(
+    dropped_links = data.frame(
+      reason = "self_loop",
+      n = removed_loops
+    )
+  )
+
+  return(list(nodes = nodes, links = links, audit = audit))
+}
+```
+
+```{r}
+
+build_aggregates <- function(nodes, links) {
+
+  yearly_genre_event_counts <- nodes %>%
+    filter(
+      Node_Type %in% c("Song", "Album") &
+        !is.na(release_date) &
+        !is.na(genre) & genre != "Unknown"
+    ) %>%
+    count(year = release_date, genre, name = "n") %>%
+    arrange(year, genre)
+
+  return(list(yearly_genre_event_counts = yearly_genre_event_counts))
+}
+```
+
+```{r}
+
+build_network_metrics <- function(nodes, links) {
+
+  genre_matrix <- links %>%
+    filter(Edge_Type %in% influence_edges) %>%
+    left_join(nodes %>% select(id, genre), by = c("source" = "id")) %>%
+    rename(source_genre = genre) %>%
+    left_join(nodes %>% select(id, genre), by = c("target" = "id")) %>%
+    rename(target_genre = genre) %>%
+    filter(
+      !is.na(source_genre) & !is.na(target_genre) &
+        source_genre != "Unknown" & target_genre != "Unknown" &
+        source_genre != target_genre
+    ) %>%
+    count(source_genre, target_genre, name = "n") %>%
+    arrange(desc(n))
+
+  return(list(genre_matrix = genre_matrix))
+}
+```
+
+```{r}
+
+oceanus_influence_over_time <- function(nodes, links) {
+
+  oceanus_ids <- get_oceanus_ids(nodes)
+
+  oceanus_influence_by_year <- links %>%
+    filter(Edge_Type %in% influence_edges) %>%
+    filter(target %in% oceanus_ids) %>%
+    distinct(source, target, Edge_Type, .keep_all = TRUE) %>%
+    left_join(
+      nodes %>% select(id, display_name, genre, release_date, Node_Type),
+      by = c("source" = "id")
+    ) %>%
+    filter(
+      !is.na(release_date),
+      genre != "Oceanus Folk",
+      Node_Type %in% c("Song", "Album")
+    ) %>%
+    count(year = release_date, name = "influence_count") %>%
+    arrange(year)
+
+  return(oceanus_influence_by_year)
+}
+```
+
+```{r}
+
+artists_influenced_by_oceanus <- function(nodes, links) {
+
+  creation_edge_types <- c("PerformerOf", "ComposerOf", "ProducerOf", "LyricistOf")
+
+  oceanus_ids <- get_oceanus_ids(nodes)
+
+  oceanus_influenced_works <- links %>%
+    filter(Edge_Type %in% influence_edges) %>%
+    filter(target %in% oceanus_ids) %>%
+    distinct(source, target, Edge_Type, .keep_all = TRUE) %>%
+    left_join(
+      nodes %>% select(
+        id,
+        influenced_work_type = Node_Type,
+        influenced_genre = genre,
+        release_date
+      ),
+      by = c("source" = "id")
+    ) %>%
+    filter(
+      influenced_work_type %in% c("Song", "Album"),
+      !is.na(release_date),
+      !is.na(influenced_genre),
+      influenced_genre != "Oceanus Folk"
+    )
+
+  artist_links <- links %>%
+    filter(Edge_Type %in% creation_edge_types) %>%
+    distinct(source, target, Edge_Type, .keep_all = TRUE)
+
+  influenced_artists <- oceanus_influenced_works %>%
+    select(influenced_work_id = source, influenced_genre, release_date) %>%
+    distinct() %>%
+    inner_join(
+      artist_links %>% select(artist_id = source, influenced_work_id = target, role = Edge_Type),
+      by = "influenced_work_id"
+    ) %>%
+    left_join(
+      nodes %>% select(artist_id = id, artist_name = display_name, artist_type = Node_Type),
+      by = "artist_id"
+    ) %>%
+    filter(artist_type %in% c("Person", "MusicalGroup")) %>%
+    group_by(artist_id, artist_name, artist_type) %>%
+    summarise(
+      influenced_works = n_distinct(influenced_work_id),
+      influence_edges = n(),
+      first_year = min(release_date, na.rm = TRUE),
+      latest_year = max(release_date, na.rm = TRUE),
+      genres = paste(sort(unique(influenced_genre)), collapse = ", "),
+      roles = paste(sort(unique(role)), collapse = ", "),
+      .groups = "drop"
+    ) %>%
+    arrange(desc(influenced_works), desc(influence_edges))
+
+  return(influenced_artists)
+}
+```
+
+```{r}
+
+filter_genre_matrix <- function(genre_matrix) {
+
+  flows <- genre_matrix %>%
+    filter(source_genre == "Oceanus Folk" | target_genre == "Oceanus Folk") %>%
+    mutate(
+      from= target_genre,
+      to= source_genre,
+      value = n,
+      type = case_when(
+        from == "Oceanus Folk" ~ "Oceanus Folk influencing",
+        to == "Oceanus Folk" ~ "Genres inspiring Oceanus Folk",
+        TRUE ~ "Undisclosed"
+      )
+    ) %>%
+    select(from, to, value, type) %>%
+    arrange(type, desc(value))
+
+  return(flows)
+}
+```
+
+```{r}
+
+inspiration_over_time <- function(nodes, links) {
+
+  creation_edge_types <- c("PerformerOf", "ComposerOf", "ProducerOf", "LyricistOf")
+  oceanus_ids <- get_oceanus_ids(nodes)
+
+  inspiration_by_year <- links %>%
+    filter(Edge_Type %in% influence_edges) %>%
+    filter(source %in% oceanus_ids) %>%
+    distinct(source, target, Edge_Type, .keep_all = TRUE) %>%
+    left_join(
+      nodes %>% select(id, oceanus_work_type = Node_Type, oceanus_release_year = release_date),
+      by = c("source" = "id")
+    ) %>%
+    left_join(
+      nodes %>% select(id, inspiring_work = name, inspiring_genre = genre),
+      by = c("target" = "id")
+    ) %>%
+    filter(
+      oceanus_work_type %in% c("Song", "Album"),
+      !is.na(oceanus_release_year),
+      !is.na(inspiring_genre),
+      inspiring_genre != "Unknown",
+      inspiring_genre != "Oceanus Folk"
+    ) %>%
+    inner_join(
+      links %>%
+        filter(Edge_Type %in% creation_edge_types) %>%
+        select(artist_id = source, work_id = target, role = Edge_Type),
+      by = c("target" = "work_id")
+    ) %>%
+    left_join(
+      nodes %>% select(id, artist_name = display_name, artist_type = Node_Type),
+      by = c("artist_id" = "id")
+    ) %>%
+    filter(artist_type %in% c("Person", "MusicalGroup")) %>%
+    select(year = oceanus_release_year, inspiring_genre, inspiring_work, artist_name, artist_type, role) %>%
+    distinct() %>%
+    arrange(year, inspiring_genre, artist_name)
+
+  return(inspiration_by_year)
+}
+```
+
+```{r}
+
+raw_inspection <- inspect_raw_data("data.json")
+print(raw_inspection$problem_counts)
+
+cleaned_data <- core_preprocess("data.json")
+nodes <- cleaned_data$nodes
+links <- cleaned_data$links
+print(cleaned_data$audit$dropped_links)
+
+aggregates <- build_aggregates(nodes, links)
+network_metrics <- build_network_metrics(nodes, links)
+
+oceanus_influence_by_year <- oceanus_influence_over_time(nodes, links)
+
+artists_influenced <- artists_influenced_by_oceanus(nodes, links)
+View(artists_influenced)
+```
+
+```{r}
+
+if (!dir.exists("observable_data")) dir.create("observable_data")
+
+# Q2a
+write_json(oceanus_influence_by_year, "observable_data/q2a_oceanus_influence_by_year.json", pretty = TRUE)
+
+write_json(
+  aggregates$yearly_genre_event_counts %>% filter(genre == "Oceanus Folk"),
+  "observable_data/q2a_oceanus_releases_by_year.json",
+  pretty = TRUE
+)
+
+# Q2b
+write_json(
+  network_metrics$genre_matrix %>%
+    filter(target_genre == "Oceanus Folk") %>%
+    rename(genre = source_genre) %>%
+    select(genre, n) %>%
+    arrange(desc(n)),
+  "observable_data/q2b_genres_influenced_by_oceanus.json",
+  pretty = TRUE
+)
+
+write_json(
+  artists_influenced_by_oceanus(nodes, links),
+  "observable_data/q2b_artists_influenced_by_oceanus.json",
+  pretty = TRUE
+)
+
+# Q2c
+write_json(
+  filter_genre_matrix(network_metrics$genre_matrix),
+  "observable_data/q2c_oceanus_flows.json",
+  pretty = TRUE
+)
+
+write_json(
+  inspiration_over_time(nodes, links),
+  "observable_data/q2c_inspiration_over_time.json",
+  pretty = TRUE
+)
+
+write_json(
+  nodes %>%
+    filter(Node_Type %in% c("Song", "Album"), genre == "Oceanus Folk", notable == TRUE, !is.na(notoriety_date)) %>%
+    inner_join(
+      links %>% filter(Edge_Type %in% c("PerformerOf", "ComposerOf", "ProducerOf", "LyricistOf")) %>%
+        select(artist_id = source, work_id = target),
+      by = c("id" = "work_id")
+    ) %>%
+    left_join(
+      nodes %>% select(id, artist_name = name),
+      by = c("artist_id" = "id")
+    ) %>%
+    count(year = notoriety_date, artist_name, name = "n") %>%
+    arrange(year, artist_name),
+  "observable_data/q2c_of_notoriety_by_year.json",
+  pretty = TRUE
+)
+
+```

@@ -1,0 +1,2252 @@
+{
+  "nodes": [
+    {
+      "Node Type": "Person",
+      "name": "Ming Ren",
+      "id": 76
+    },
+    {
+      "Node Type": "Person",
+      "name": "Belinda Knappe",
+      "id": 304
+    },
+    {
+      "Node Type": "Person",
+      "name": "Yang Peng",
+      "id": 455
+    },
+    {
+      "Node Type": "Person",
+      "name": "Min Cao",
+      "id": 457
+    },
+    {
+      "Node Type": "Song",
+      "name": "Bold Without Apology",
+      "single": false,
+      "release_date": "2010",
+      "genre": "Indie Rock",
+      "notable": true,
+      "id": 876
+    },
+    {
+      "Node Type": "Person",
+      "name": "Qiang Zhou",
+      "id": 877
+    },
+    {
+      "Node Type": "Person",
+      "name": "Jing Kang",
+      "id": 878
+    },
+    {
+      "Node Type": "Person",
+      "name": "Jun Zhou",
+      "id": 934
+    },
+    {
+      "Node Type": "Person",
+      "name": "Yong Dong",
+      "id": 1276
+    },
+    {
+      "Node Type": "Person",
+      "name": "Urszula Stochmal",
+      "id": 1294
+    },
+    {
+      "Node Type": "Person",
+      "name": "Ming Long",
+      "id": 1335
+    },
+    {
+      "Node Type": "Person",
+      "name": "Yong Lu",
+      "id": 1336
+    },
+    {
+      "Node Type": "Person",
+      "name": "Yang Wan",
+      "id": 1952
+    },
+    {
+      "Node Type": "Album",
+      "name": "Hallowed Transaction",
+      "release_date": "2017",
+      "genre": "Doom Metal",
+      "notable": true,
+      "id": 2197
+    },
+    {
+      "Node Type": "Person",
+      "name": "Yoko Hashimoto",
+      "id": 2198
+    },
+    {
+      "Node Type": "Person",
+      "name": "Kaori Ito",
+      "id": 2199
+    },
+    {
+      "Node Type": "Person",
+      "name": "Naoko Sato",
+      "id": 2200
+    },
+    {
+      "Node Type": "Person",
+      "name": "Yan Tang",
+      "id": 2400
+    },
+    {
+      "Node Type": "Person",
+      "name": "Jeremiah Love",
+      "id": 2705
+    },
+    {
+      "Node Type": "Person",
+      "name": "Zachary Francis",
+      "id": 2706
+    },
+    {
+      "Node Type": "Person",
+      "name": "Robert Woods",
+      "id": 2707
+    },
+    {
+      "Node Type": "Person",
+      "name": "Sean Jones",
+      "id": 3086
+    },
+    {
+      "Node Type": "Person",
+      "name": "Min Long",
+      "id": 3760
+    },
+    {
+      "Node Type": "Person",
+      "name": "Gang Shao",
+      "id": 3761
+    },
+    {
+      "Node Type": "Person",
+      "name": "Qiang Yuan",
+      "id": 3763
+    },
+    {
+      "Node Type": "Person",
+      "name": "Wei Zhao",
+      "id": 3764
+    },
+    {
+      "Node Type": "Song",
+      "name": "Susurros de Pasión",
+      "single": true,
+      "release_date": "2004",
+      "genre": "Synthwave",
+      "notable": true,
+      "id": 3881,
+      "notoriety_date": "2004"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Juan Zhou",
+      "id": 3882
+    },
+    {
+      "Node Type": "Person",
+      "name": "Yang Zhao",
+      "id": 3883
+    },
+    {
+      "Node Type": "Song",
+      "name": "Altitude of Mistakes",
+      "single": true,
+      "release_date": "2015",
+      "genre": "Americana",
+      "notable": true,
+      "id": 3986,
+      "notoriety_date": "2015"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Xiulan Fang",
+      "id": 3987
+    },
+    {
+      "Node Type": "Person",
+      "name": "Qiang Liu",
+      "id": 3988
+    },
+    {
+      "Node Type": "Person",
+      "name": "Jun Qiao",
+      "id": 3989
+    },
+    {
+      "Node Type": "Person",
+      "name": "Ming Huang",
+      "id": 3990
+    },
+    {
+      "Node Type": "Person",
+      "name": "Samantha Bullock",
+      "id": 5213
+    },
+    {
+      "Node Type": "Song",
+      "name": "Our Inevitable Path",
+      "single": true,
+      "release_date": "2017",
+      "genre": "Indie Folk",
+      "notable": true,
+      "id": 5574,
+      "written_date": "2017"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Shannon Harvey",
+      "id": 5575
+    },
+    {
+      "Node Type": "Song",
+      "name": "When the Bar Lights Go Up",
+      "single": false,
+      "release_date": "2000",
+      "genre": "Emo/Pop Punk",
+      "notable": true,
+      "id": 6592
+    },
+    {
+      "Node Type": "Person",
+      "name": "Lori Massey",
+      "id": 6593
+    },
+    {
+      "Node Type": "Song",
+      "name": "Reflejo Interior",
+      "single": false,
+      "release_date": "1983",
+      "genre": "Americana",
+      "notable": true,
+      "id": 7026,
+      "written_date": "1983"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Sheryl Roman",
+      "id": 7027
+    },
+    {
+      "Node Type": "Person",
+      "name": "John Graves",
+      "id": 7028
+    },
+    {
+      "Node Type": "Person",
+      "name": "Jason Aguirre",
+      "id": 7029
+    },
+    {
+      "Node Type": "Person",
+      "name": "Matthew Lane",
+      "id": 7030
+    },
+    {
+      "Node Type": "Person",
+      "name": "Cipriano Peranda",
+      "id": 8026
+    },
+    {
+      "Node Type": "Song",
+      "name": "Echoes of Forgotten Light",
+      "single": true,
+      "release_date": "2004",
+      "genre": "Alternative Rock",
+      "notable": true,
+      "id": 8207
+    },
+    {
+      "Node Type": "Person",
+      "name": "Igor Dyś",
+      "id": 8208
+    },
+    {
+      "Node Type": "Person",
+      "name": "Tao Gao",
+      "id": 8880
+    },
+    {
+      "Node Type": "Song",
+      "name": "Für uns alle zusammen",
+      "single": true,
+      "release_date": "2017",
+      "genre": "Alternative Rock",
+      "notable": true,
+      "id": 9223,
+      "written_date": "2017"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Joseph Ponce",
+      "id": 9224,
+      "stage_name": " THA PROPHET"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Herbert Mcfarland",
+      "id": 9225
+    },
+    {
+      "Node Type": "Person",
+      "name": "Rachel Montes",
+      "id": 9226
+    },
+    {
+      "Node Type": "Person",
+      "name": "Caitlin Miller",
+      "id": 9227
+    },
+    {
+      "Node Type": "Person",
+      "name": "Rebecca Wise",
+      "id": 9228
+    },
+    {
+      "Node Type": "Song",
+      "name": "Partisan's Lament",
+      "single": true,
+      "release_date": "2030",
+      "genre": "Indie Pop",
+      "notable": true,
+      "id": 9848
+    },
+    {
+      "Node Type": "Song",
+      "name": "Dreamscape of Judgment",
+      "single": true,
+      "release_date": "2023",
+      "genre": "Symphonic Metal",
+      "notable": true,
+      "id": 10016
+    },
+    {
+      "Node Type": "Person",
+      "name": "Ping Liao",
+      "id": 10017
+    },
+    {
+      "Node Type": "Person",
+      "name": "Trevor Bass",
+      "id": 10018
+    },
+    {
+      "Node Type": "Person",
+      "name": "Xiuying Du",
+      "id": 10019
+    },
+    {
+      "Node Type": "Person",
+      "name": "Xia Yuan",
+      "id": 10020
+    },
+    {
+      "Node Type": "Person",
+      "name": "Sandra Burke",
+      "id": 10021
+    },
+    {
+      "Node Type": "Person",
+      "name": "Yan Li",
+      "id": 10022
+    },
+    {
+      "Node Type": "Song",
+      "name": "Twelve Bells of Augsburg",
+      "single": true,
+      "release_date": "2026",
+      "genre": "Psychedelic Rock",
+      "notable": true,
+      "id": 10534
+    },
+    {
+      "Node Type": "Song",
+      "name": "Parallel Memories",
+      "single": false,
+      "release_date": "2028",
+      "genre": "Dream Pop",
+      "notable": true,
+      "id": 10903
+    },
+    {
+      "Node Type": "Person",
+      "name": "Ping Jin",
+      "id": 10904
+    },
+    {
+      "Node Type": "Person",
+      "name": "Tao Wen",
+      "id": 10905
+    },
+    {
+      "Node Type": "Person",
+      "name": "Guiying Ren",
+      "id": 10906
+    },
+    {
+      "Node Type": "Person",
+      "name": "Lei Shi",
+      "id": 10907
+    },
+    {
+      "Node Type": "Person",
+      "name": "Wei Liang",
+      "id": 10908
+    },
+    {
+      "Node Type": "Song",
+      "name": "Divergent Memories",
+      "single": true,
+      "release_date": "2017",
+      "genre": "Indie Folk",
+      "notable": true,
+      "id": 11254,
+      "notoriety_date": "2017"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Joshua Taylor",
+      "id": 11255
+    },
+    {
+      "Node Type": "Song",
+      "name": "Provence Aria",
+      "single": true,
+      "release_date": "2023",
+      "genre": "Indie Rock",
+      "notable": true,
+      "id": 12237
+    },
+    {
+      "Node Type": "Person",
+      "name": "Lei Fu",
+      "id": 12238
+    },
+    {
+      "Node Type": "Person",
+      "name": "Yan Dai",
+      "id": 12239
+    },
+    {
+      "Node Type": "Person",
+      "name": "Daniel Mccormick",
+      "id": 12240
+    },
+    {
+      "Node Type": "Person",
+      "name": "Lei Jin",
+      "id": 12241
+    },
+    {
+      "Node Type": "Song",
+      "name": "Coastal Whispers of Biscay",
+      "single": true,
+      "release_date": "2031",
+      "genre": "Alternative Rock",
+      "notable": true,
+      "id": 12685
+    },
+    {
+      "Node Type": "Person",
+      "name": "James Medina",
+      "id": 12686
+    },
+    {
+      "Node Type": "Person",
+      "name": "Matthew Best",
+      "id": 12687
+    },
+    {
+      "Node Type": "Person",
+      "name": "Linda Burns",
+      "id": 12688
+    },
+    {
+      "Node Type": "Person",
+      "name": "Brooke Olson",
+      "id": 12948
+    },
+    {
+      "Node Type": "Song",
+      "name": "Exoskeleton Dissolve",
+      "single": true,
+      "release_date": "2020",
+      "genre": "Indie Rock",
+      "notable": true,
+      "id": 13014,
+      "notoriety_date": "2020"
+    },
+    {
+      "Node Type": "Person",
+      "name": "David Reese",
+      "id": 13015
+    },
+    {
+      "Node Type": "Person",
+      "name": "Ryan Dunlap",
+      "id": 13016
+    },
+    {
+      "Node Type": "Person",
+      "name": "Elmo Calbo",
+      "id": 13017
+    },
+    {
+      "Node Type": "Person",
+      "name": "Amico Luciani",
+      "id": 13018
+    },
+    {
+      "Node Type": "Song",
+      "name": "Silent Steps in the Forest's Embrace",
+      "single": true,
+      "release_date": "2023",
+      "genre": "Avant-Garde Folk",
+      "notable": true,
+      "id": 13589,
+      "written_date": "2023",
+      "notoriety_date": "2023"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Wei Zhao",
+      "id": 13590
+    },
+    {
+      "Node Type": "Song",
+      "name": "Folklore's Heartbeat",
+      "single": true,
+      "release_date": "2020",
+      "genre": "Blues Rock",
+      "notable": true,
+      "id": 14107,
+      "notoriety_date": "2033"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Tao Hu",
+      "id": 14108
+    },
+    {
+      "Node Type": "Album",
+      "name": "The Long Way Home",
+      "release_date": "2023",
+      "genre": "Dream Pop",
+      "notable": true,
+      "id": 14296
+    },
+    {
+      "Node Type": "Person",
+      "name": "Ming Qiao",
+      "id": 14297
+    },
+    {
+      "Node Type": "Person",
+      "name": "Na Ye",
+      "id": 14298
+    },
+    {
+      "Node Type": "Song",
+      "name": "Weathered Miles",
+      "single": true,
+      "release_date": "2023",
+      "genre": "Doom Metal",
+      "notable": true,
+      "id": 14352
+    },
+    {
+      "Node Type": "Person",
+      "name": "Debra Graham",
+      "id": 14353
+    },
+    {
+      "Node Type": "Person",
+      "name": "Edward Evans",
+      "id": 14354
+    },
+    {
+      "Node Type": "Person",
+      "name": "Dylan Schwartz",
+      "id": 14355
+    },
+    {
+      "Node Type": "Person",
+      "name": "James Henderson",
+      "id": 14356
+    },
+    {
+      "Node Type": "Person",
+      "name": "Amy Powell",
+      "id": 14357
+    },
+    {
+      "Node Type": "Person",
+      "name": "Shawn Johnson",
+      "id": 14358
+    },
+    {
+      "Node Type": "Person",
+      "name": "Joel Long",
+      "id": 14359
+    },
+    {
+      "Node Type": "Person",
+      "name": "Michael Nixon",
+      "id": 14360
+    },
+    {
+      "Node Type": "Person",
+      "name": "Nathan Jones",
+      "id": 14361
+    },
+    {
+      "Node Type": "Album",
+      "name": "Addicted to Your Heartache",
+      "release_date": "2004",
+      "genre": "Southern Gothic Rock",
+      "notable": true,
+      "id": 14658,
+      "written_date": "2000"
+    },
+    {
+      "Node Type": "Song",
+      "name": "Twilight's Threshold",
+      "single": true,
+      "release_date": "2007",
+      "genre": "Synthwave",
+      "notable": true,
+      "id": 14893,
+      "written_date": "2007",
+      "notoriety_date": "2007"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Kimberly Estrada",
+      "id": 14894
+    },
+    {
+      "Node Type": "Person",
+      "name": "Fang Ding",
+      "id": 14895
+    },
+    {
+      "Node Type": "Song",
+      "name": "The Crown We Wear",
+      "single": true,
+      "release_date": "2022",
+      "genre": "Indie Rock",
+      "notable": true,
+      "id": 14933
+    },
+    {
+      "Node Type": "Person",
+      "name": "Miss Jennifer Williams",
+      "id": 14934
+    },
+    {
+      "Node Type": "Person",
+      "name": "William Robinson",
+      "id": 14935
+    },
+    {
+      "Node Type": "Person",
+      "name": "Judy Yang",
+      "id": 14936
+    },
+    {
+      "Node Type": "Person",
+      "name": "Joanna Avery",
+      "id": 14937
+    },
+    {
+      "Node Type": "Person",
+      "name": "Molly Gonzalez",
+      "id": 14938
+    },
+    {
+      "Node Type": "Person",
+      "name": "Juan Shi",
+      "id": 15224
+    },
+    {
+      "Node Type": "Song",
+      "name": "Sacred Fragments",
+      "single": true,
+      "release_date": "2003",
+      "genre": "Synthwave",
+      "notable": true,
+      "id": 15855,
+      "notoriety_date": "2003"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Ming Zhou",
+      "id": 15856
+    },
+    {
+      "Node Type": "Person",
+      "name": "Simone Säuberlich",
+      "id": 16031
+    },
+    {
+      "Node Type": "Song",
+      "name": "Harvest Dance at Ler Valley",
+      "single": true,
+      "release_date": "2010",
+      "genre": "Psychedelic Rock",
+      "notable": true,
+      "id": 16312
+    },
+    {
+      "Node Type": "MusicalGroup",
+      "name": "Ursus",
+      "id": 16823
+    },
+    {
+      "Node Type": "MusicalGroup",
+      "name": "Phantom Roots",
+      "id": 16910
+    },
+    {
+      "Node Type": "Album",
+      "name": "Neon Heartbeat",
+      "release_date": "2031",
+      "genre": "Synthwave",
+      "notable": false,
+      "id": 16961,
+      "written_date": "2030"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Ballads for the End of Time",
+      "release_date": "2033",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 16989,
+      "written_date": "2032"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Melancholy Circuitry",
+      "release_date": "2033",
+      "genre": "Americana",
+      "notable": true,
+      "id": 16999,
+      "written_date": "2032"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Drifting Between the Stars and the Sea",
+      "release_date": "2034",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17047,
+      "written_date": "2033"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Artificial Sunsets",
+      "release_date": "2035",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17048,
+      "written_date": "2034"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Electric Reverie",
+      "release_date": "2038",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17049,
+      "written_date": "2037"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Ballads for the Low Tide",
+      "release_date": "2037",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17121,
+      "written_date": "2036"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Tides of Echos",
+      "release_date": "2029",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17231,
+      "written_date": "2028"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Hidden Depths",
+      "release_date": "2031",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17252,
+      "written_date": "2030"
+    },
+    {
+      "Node Type": "Person",
+      "name": "Sailor Shift",
+      "id": 17255
+    },
+    {
+      "Node Type": "Album",
+      "name": "The Kelp Forest Canticles",
+      "release_date": "2024",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17261,
+      "written_date": "2023"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Luminescent Tides",
+      "release_date": "2025",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17262,
+      "written_date": "2024"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Shoreline Sonnets",
+      "release_date": "2026",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17263,
+      "written_date": "2025"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Tidal Pop Waves",
+      "release_date": "2028",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17272,
+      "written_date": "2027"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Salty Dreams",
+      "release_date": "2030",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17273,
+      "written_date": "2029"
+    },
+    {
+      "Node Type": "Album",
+      "name": "The Current & The Chord",
+      "release_date": "2032",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17274,
+      "written_date": "2031"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Coral Beats",
+      "release_date": "2034",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17275,
+      "written_date": "2033"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Tides & Ballads",
+      "release_date": "2036",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17276,
+      "written_date": "2035"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Oceanbound",
+      "release_date": "2038",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17277,
+      "written_date": "2037"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Echoes of the Deep",
+      "release_date": "2040",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17278,
+      "written_date": "2039"
+    },
+    {
+      "Node Type": "Song",
+      "name": "High Tide Heartbeat",
+      "single": true,
+      "release_date": "2028",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17279
+    },
+    {
+      "Node Type": "Song",
+      "name": "Electric Eel Love",
+      "single": false,
+      "release_date": "2028",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17280
+    },
+    {
+      "Node Type": "Song",
+      "name": "Sun-Drenched Daydream",
+      "single": false,
+      "release_date": "2028",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17281
+    },
+    {
+      "Node Type": "Song",
+      "name": "Chord of the Deep",
+      "single": false,
+      "release_date": "2028",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17282
+    },
+    {
+      "Node Type": "Song",
+      "name": "Heart of the Habitat",
+      "single": true,
+      "release_date": "2030",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17283
+    },
+    {
+      "Node Type": "Song",
+      "name": "Reef Rhythm",
+      "single": false,
+      "release_date": "2030",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17284
+    },
+    {
+      "Node Type": "Song",
+      "name": "Driftwood Lullaby",
+      "single": false,
+      "release_date": "2030",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17285
+    },
+    {
+      "Node Type": "Song",
+      "name": "Saltwater Hymn",
+      "single": false,
+      "release_date": "2032",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17286
+    },
+    {
+      "Node Type": "Song",
+      "name": "Moon Over the Tide",
+      "single": false,
+      "release_date": "2034",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17287
+    },
+    {
+      "Node Type": "Song",
+      "name": "Into the Current",
+      "single": true,
+      "release_date": "2034",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17288
+    },
+    {
+      "Node Type": "Song",
+      "name": "Barnacle Heart",
+      "single": false,
+      "release_date": "2034",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17289
+    },
+    {
+      "Node Type": "Song",
+      "name": "Fog & Fiddle",
+      "single": false,
+      "release_date": "2036",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17290
+    },
+    {
+      "Node Type": "Song",
+      "name": "The Fisherman's Prayer",
+      "single": true,
+      "release_date": "2036",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17291
+    },
+    {
+      "Node Type": "Song",
+      "name": "Stormsong",
+      "single": true,
+      "release_date": "2038",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17292
+    },
+    {
+      "Node Type": "Song",
+      "name": "Salt in My Veins",
+      "single": false,
+      "release_date": "2040",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17293
+    },
+    {
+      "Node Type": "Song",
+      "name": "The Last Mariner",
+      "single": false,
+      "release_date": "2040",
+      "genre": "Oceanus Folk",
+      "notable": false,
+      "id": 17294
+    },
+    {
+      "Node Type": "Album",
+      "name": "Tidesworn Ballads",
+      "release_date": "2031",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17350,
+      "written_date": "2030"
+    },
+    {
+      "Node Type": "Album",
+      "name": "Submerged Sonatas",
+      "release_date": "2031",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17356,
+      "written_date": "2030"
+    },
+    {
+      "Node Type": "Song",
+      "name": "Seashell Serenade",
+      "single": true,
+      "release_date": "2030",
+      "genre": "Oceanus Folk",
+      "notable": true,
+      "id": 17410,
+      "notoriety_date": "2030"
+    }
+  ],
+  "links": [
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 16961,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 16989,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 16999,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17047,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17048,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17049,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17121,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17231,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17252,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17261,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17262,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17263,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17272,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17272,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17273,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17273,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17274,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17274,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17275,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17275,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17276,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17276,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17277,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17277,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17278,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17278,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17279,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17280,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17281,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17282,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17283,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17284,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17285,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17286,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17287,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17288,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17289,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17290,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17291,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17292,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17293,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17294,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17350,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17350,
+      "key": 1
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 17255,
+      "target": 17356,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17356,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 17255,
+      "target": 17410,
+      "key": 0
+    },
+    {
+      "Edge Type": "CoverOf",
+      "source": 16999,
+      "target": 14893,
+      "key": 0
+    },
+    {
+      "Edge Type": "InStyleOf",
+      "source": 17049,
+      "target": 14107,
+      "key": 0
+    },
+    {
+      "Edge Type": "InterpolatesFrom",
+      "source": 17049,
+      "target": 7026,
+      "key": 0
+    },
+    {
+      "Edge Type": "InterpolatesFrom",
+      "source": 17231,
+      "target": 14352,
+      "key": 0
+    },
+    {
+      "Edge Type": "InStyleOf",
+      "source": 17231,
+      "target": 14296,
+      "key": 0
+    },
+    {
+      "Edge Type": "DirectlySamples",
+      "source": 17261,
+      "target": 2197,
+      "key": 0
+    },
+    {
+      "Edge Type": "CoverOf",
+      "source": 17261,
+      "target": 9223,
+      "key": 0
+    },
+    {
+      "Edge Type": "InStyleOf",
+      "source": 17273,
+      "target": 3881,
+      "key": 0
+    },
+    {
+      "Edge Type": "CoverOf",
+      "source": 17273,
+      "target": 9848,
+      "key": 0
+    },
+    {
+      "Edge Type": "CoverOf",
+      "source": 17275,
+      "target": 16312,
+      "key": 0
+    },
+    {
+      "Edge Type": "InStyleOf",
+      "source": 17275,
+      "target": 15855,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricalReferenceTo",
+      "source": 17277,
+      "target": 876,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricalReferenceTo",
+      "source": 17277,
+      "target": 3986,
+      "key": 0
+    },
+    {
+      "Edge Type": "InterpolatesFrom",
+      "source": 17279,
+      "target": 14658,
+      "key": 0
+    },
+    {
+      "Edge Type": "CoverOf",
+      "source": 17280,
+      "target": 14933,
+      "key": 0
+    },
+    {
+      "Edge Type": "InStyleOf",
+      "source": 17280,
+      "target": 10534,
+      "key": 0
+    },
+    {
+      "Edge Type": "InStyleOf",
+      "source": 17285,
+      "target": 8207,
+      "key": 0
+    },
+    {
+      "Edge Type": "InStyleOf",
+      "source": 17286,
+      "target": 10903,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricalReferenceTo",
+      "source": 17287,
+      "target": 13589,
+      "key": 0
+    },
+    {
+      "Edge Type": "InterpolatesFrom",
+      "source": 17287,
+      "target": 11254,
+      "key": 0
+    },
+    {
+      "Edge Type": "InStyleOf",
+      "source": 17289,
+      "target": 5574,
+      "key": 0
+    },
+    {
+      "Edge Type": "InterpolatesFrom",
+      "source": 17290,
+      "target": 12685,
+      "key": 0
+    },
+    {
+      "Edge Type": "InStyleOf",
+      "source": 17290,
+      "target": 12237,
+      "key": 0
+    },
+    {
+      "Edge Type": "DirectlySamples",
+      "source": 17292,
+      "target": 13014,
+      "key": 0
+    },
+    {
+      "Edge Type": "InStyleOf",
+      "source": 17292,
+      "target": 6592,
+      "key": 0
+    },
+    {
+      "Edge Type": "CoverOf",
+      "source": 17350,
+      "target": 10016,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 76,
+      "target": 12237,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 304,
+      "target": 16312,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 455,
+      "target": 15855,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 455,
+      "target": 15855,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 457,
+      "target": 15855,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 877,
+      "target": 876,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 878,
+      "target": 876,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 878,
+      "target": 876,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 934,
+      "target": 3881,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 1276,
+      "target": 3986,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 1294,
+      "target": 14658,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 1294,
+      "target": 14658,
+      "key": 1
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 1294,
+      "target": 14658,
+      "key": 2
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 1335,
+      "target": 14893,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 1335,
+      "target": 14893,
+      "key": 1
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 1336,
+      "target": 14893,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 1952,
+      "target": 15855,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 2198,
+      "target": 2197,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 2199,
+      "target": 2197,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 2200,
+      "target": 2197,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 2200,
+      "target": 2197,
+      "key": 1
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 2400,
+      "target": 3986,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 2705,
+      "target": 10534,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 2705,
+      "target": 10534,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 2706,
+      "target": 10534,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 2707,
+      "target": 10534,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 2707,
+      "target": 10534,
+      "key": 1
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 3086,
+      "target": 9848,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 3760,
+      "target": 3881,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 3760,
+      "target": 3881,
+      "key": 1
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 3761,
+      "target": 3881,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 3761,
+      "target": 3881,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 3763,
+      "target": 3881,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 3764,
+      "target": 3881,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 3882,
+      "target": 3881,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 3883,
+      "target": 3881,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 3987,
+      "target": 3986,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 3988,
+      "target": 3986,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 3988,
+      "target": 3986,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 3989,
+      "target": 3986,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 3990,
+      "target": 3986,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 5213,
+      "target": 9848,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 5575,
+      "target": 5574,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 5575,
+      "target": 5574,
+      "key": 1
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 5575,
+      "target": 5574,
+      "key": 2
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 6593,
+      "target": 6592,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 6593,
+      "target": 6592,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 7027,
+      "target": 7026,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 7028,
+      "target": 7026,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 7029,
+      "target": 7026,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 7030,
+      "target": 7026,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 8026,
+      "target": 13014,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 8208,
+      "target": 8207,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 8208,
+      "target": 8207,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 8880,
+      "target": 13589,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 8880,
+      "target": 13589,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 9224,
+      "target": 9223,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 9225,
+      "target": 9223,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 9226,
+      "target": 9223,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 9227,
+      "target": 9223,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 9228,
+      "target": 9223,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 10017,
+      "target": 10016,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 10018,
+      "target": 10016,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 10019,
+      "target": 10016,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 10020,
+      "target": 10016,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 10021,
+      "target": 10016,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 10022,
+      "target": 10016,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 10022,
+      "target": 10016,
+      "key": 1
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 10904,
+      "target": 10903,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 10905,
+      "target": 10903,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 10905,
+      "target": 10903,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 10906,
+      "target": 10903,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 10907,
+      "target": 10903,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 10908,
+      "target": 10903,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 10908,
+      "target": 10903,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 11255,
+      "target": 11254,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 11255,
+      "target": 11254,
+      "key": 1
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 11255,
+      "target": 11254,
+      "key": 2
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 12238,
+      "target": 12237,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 12238,
+      "target": 12237,
+      "key": 1
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 12239,
+      "target": 12237,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 12239,
+      "target": 12237,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 12240,
+      "target": 12237,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 12241,
+      "target": 12237,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 12686,
+      "target": 12685,
+      "key": 0
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 12687,
+      "target": 12685,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 12687,
+      "target": 12685,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 12688,
+      "target": 12685,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 12948,
+      "target": 14107,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 13015,
+      "target": 13014,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 13016,
+      "target": 13014,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 13017,
+      "target": 13014,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 13018,
+      "target": 13014,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 13590,
+      "target": 13589,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 14108,
+      "target": 14107,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14108,
+      "target": 14107,
+      "key": 1
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 14297,
+      "target": 14296,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14298,
+      "target": 14296,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 14298,
+      "target": 14296,
+      "key": 1
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 14353,
+      "target": 14352,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14353,
+      "target": 14352,
+      "key": 1
+    },
+    {
+      "Edge Type": "LyricistOf",
+      "source": 14354,
+      "target": 14352,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14355,
+      "target": 14352,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14356,
+      "target": 14352,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 14357,
+      "target": 14352,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 14358,
+      "target": 14352,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14359,
+      "target": 14352,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 14360,
+      "target": 14352,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14360,
+      "target": 14352,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14361,
+      "target": 14352,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14894,
+      "target": 14893,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14895,
+      "target": 14893,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14934,
+      "target": 14933,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14935,
+      "target": 14933,
+      "key": 0
+    },
+    {
+      "Edge Type": "ProducerOf",
+      "source": 14935,
+      "target": 14933,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14936,
+      "target": 14933,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14937,
+      "target": 14933,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 14938,
+      "target": 14933,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 15224,
+      "target": 15855,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 15856,
+      "target": 15855,
+      "key": 0
+    },
+    {
+      "Edge Type": "ComposerOf",
+      "source": 16031,
+      "target": 16312,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 16031,
+      "target": 16312,
+      "key": 1
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 16823,
+      "target": 3881,
+      "key": 0
+    },
+    {
+      "Edge Type": "PerformerOf",
+      "source": 16910,
+      "target": 14893,
+      "key": 0
+    }
+  ]
+}
